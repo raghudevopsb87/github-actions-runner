@@ -14,7 +14,7 @@
       env:
         NAME: "{{ item }}"
         TOKEN: "{{ lookup('community.hashi_vault.hashi_vault', 'secret=roboshop-infra/data/github-runner:RUNNER_TOKEN token={{ vault_token }} url={{ vault_url }}') }}"
-        ORG: "https://github.com/raghudevopsb85"
+        ORG: "https://github.com/raghudevopsb87"
     loop:
       - runner1
       - runner2
