@@ -28,10 +28,10 @@
       - name: Set Prompt
         ansible.builtin.shell: set-prompt -skip-apply github-runner
 
-      - name: Load common lvm
-        ansible.builtin.import_role:
-          name: common
-          tasks_from: lvm
+#       - name: Load common lvm
+#         ansible.builtin.import_role:
+#           name: common
+#           tasks_from: lvm
 
       - name: Download Docker repo
         ansible.builtin.get_url:
