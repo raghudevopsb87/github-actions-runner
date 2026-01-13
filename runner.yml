@@ -26,7 +26,7 @@
     when: out.failed is defined
     block:
       - name: Set Prompt
-        ansible.builtin.shell: set-prompt github-runner
+        ansible.builtin.shell: set-prompt -skip-apply github-runner
 
       - name: Load common lvm
         ansible.builtin.import_role:
