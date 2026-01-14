@@ -39,7 +39,7 @@ resource "null_resource" "ansible" {
 
 variable "TOKEN" {}
 variable "ami" {
-  default = ""
+  default = "ami-0220d79f3f480ecf5"
 }
 variable "vpc_security_group_ids" {
   default = ["sg-09663d91a4fca31c9"]
