@@ -1,6 +1,9 @@
 - name: Runner Setup
   hosts: all
   tasks:
+  - name: Install python requests
+    ansible.builtin.shell: pip3.12 install requests
+
   - name: Runner container
     community.docker.docker_container:
       name: "{{ item }}"
